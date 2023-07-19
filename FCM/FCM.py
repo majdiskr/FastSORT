@@ -1,4 +1,19 @@
 # First, import the required libraries for the FCM algorithm
+"""
+@Author: majdi sukkar
+@Filename: fcm.py
+@Contact: majdiskr@gmail.com
+@Time: 2023/07/19 19:55
+@Discription: Appearance-Free Post Link
+"""
+import os
+import glob
+import torch
+import numpy as np
+from os.path import join, exists
+from collections import defaultdict
+from sklearn.preprocessing import normalize
+from scipy.optimize import linear_sum_assignment
 import numpy as np
 from sklearn.metrics import pairwise_distances
 
